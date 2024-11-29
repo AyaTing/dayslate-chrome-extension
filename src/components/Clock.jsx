@@ -19,7 +19,7 @@ export default function Clock() {
   const updateClock = useCallback(() => {
     setTimeLeft(calcTimeLeft());
     setDate(dayjs().format("MM月DD日"));
-  }, [calcTimeLeft]);
+  }, []);
 
   useEffect(() => {
     updateClock(); // 初次渲染
